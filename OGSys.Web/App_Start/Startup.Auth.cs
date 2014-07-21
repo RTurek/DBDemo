@@ -50,11 +50,11 @@ namespace OGSys.Web
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "232266429694-psvt5nvavdlc9qjua03abfshp1v7rn5v.apps.googleusercontent.com",
+                ClientSecret = "QWJvpn0KUClu26X0KUEgWeQg"
+            });
         }
     }
 }
