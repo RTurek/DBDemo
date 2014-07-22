@@ -6,37 +6,35 @@
     <title>@ViewBag.Title - Customer Manager Demo</title>
     @Styles.Render("~/Content/Site.css")
     @Scripts.Render("~/bundles/modernizr")
-
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("OGSys Test App", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Customer List","Index","Customer")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
+    <section id="top-nav-bar">
+        @Html.Partial("_TopBar")
+    </section>
+
+    <section id="content">
+        <div class="row">
+            <div class="large-12 column" style="padding:15px;margin:15px">
+                @RenderBody()
+                <hr />
+                <footer id="footer">
+                    <p>&copy; @DateTime.Now.Year - Customer Manager Demo</p>
+                </footer>
             </div>
         </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Customer Manager Demo</p>
-        </footer>
-    </div>
+    </section>
+
 
     @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/foundation")
     @RenderSection("scripts", required: false)
+    
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/foundation/foundation.js"></script>
+    <script src="~/Scripts/foundation/foundation.topbar.js"></script>
+
+    <script>
+            $(document).foundation();
+    </script>
 </body>
 </html>

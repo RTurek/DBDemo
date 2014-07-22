@@ -1,0 +1,31 @@
+﻿<div class="top contain-to-grid">
+    <nav class="top-bar" data-topbar data-options="is_hover: false">
+        <ul class="title-area">
+            <!-- Name -->
+            <li class="name">
+                <a href="@Url.Action("Index","Home")"><img style="height:45px" src="~/Content/Images/logo.png" /></a>
+            </li>
+
+            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+        </ul>
+
+        <section class="top-bar-section">
+
+            <!-- Right Nav Section -->
+            <ul class="right">
+                
+                        <li>@Html.ActionLink("Customer Database", "Index", "Customer")</li>
+                        <li class="divider"></li>
+                        <li>@Html.Partial("_LoginPartial")</li>
+            </ul>
+
+
+            <!-- Left Nav Section -->
+            <ul class="left">
+                <!-- List Items -->
+            </ul>
+
+        </section>
+    </nav>
+</div>
