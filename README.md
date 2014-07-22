@@ -1,6 +1,8 @@
-OGSys Demo Application
+OGSys Test Application
 =====
 This is a small demo application developed to gain more exposure to some of the technologies listed below.
+
+Live Demo: https://ogsys.azurewebsites.net/
 
 Overview
 =====
