@@ -14,12 +14,14 @@
 
     <section id="content">
         <div class="row">
-            <div class="large-12 column" style="padding:15px;margin:15px">
-                @RenderBody()
-                <hr />
-                <footer id="footer">
-                    <p>&copy; @DateTime.Now.Year - Customer Manager Demo</p>
-                </footer>
+            <div class="large-12 column">
+                <div style="margin:10px">
+                    @RenderBody()
+                    <hr />
+                    <footer id="footer">
+                        <p>&copy; @DateTime.Now.Year - <a href="http://www.rturek.com/" target="_blank">Ryan.Turek</a></p>
+                    </footer>
+                </div>
             </div>
         </div>
     </section>
