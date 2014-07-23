@@ -5,46 +5,47 @@
 }
 
 <div class="row">
-    <div class="small-9 column">
-        <h1>Demo Customer Database</h1>
-    </div>
-    <div align="right" style="font-size:1.5em;margin:20px">
-        @Html.ActionLink("Create New ", "Create")
-        @Html.ActionLink(" ", "Create", null, new { @class = "fi-page-add" })
+    <div class="small-12 column">
+        <h1>Demo Customer Database @Html.ActionLink(" ", "Create", null, new { @class = "fi-page-add" })</h1>
     </div>
 </div>
 
-<table style="width:100%">
+<table class="has-shadow" style="width:100%">
     <tr>
         <th>Name</th>
         <th>Company</th>
         <th>Phone</th>
         <th style="max-width:100px">Email</th>
-        <th style="min-width:120px">Options</th>
+        <th style="min-width:110px">Options</th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td style="max-width:150px">@Html.DisplayFor(modelItem => item.LastName), @Html.DisplayFor(modelItem => item.FirstName)</td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CompanyName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PhoneNumber)
-        </td>
-        <td>@Html.DisplayFor(modelItem => item.Email)</td>
-        <td style="font-size:2em">
-            <a href="@Url.Action("Edit", "Customer", new { id = item.CustomerId })"><i class="fi-page-edit"></i></a>
-            <a href="@Url.Action("Details", "Customer", new { id = item.CustomerId })"><i class="fi-info"></i></a>
-            <a href="@Url.Action("Delete", "Customer", new { id = item.CustomerId })"><i class="fi-page-delete"></i></a>
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td style="max-width:150px">@Html.DisplayFor(modelItem => item.LastName), @Html.DisplayFor(modelItem => item.FirstName)</td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CompanyName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PhoneNumber)
+            </td>
+            <td>@Html.DisplayFor(modelItem => item.Email)</td>
+            <td style="font-size:1.8em">
+                <a href="@Url.Action("Edit", "Customer", new { id = item.CustomerId })"><i class="fi-page-edit"></i></a>
+                <a href="@Url.Action("Details", "Customer", new { id = item.CustomerId })"><i class="fi-info"></i></a>
+                <a href="@Url.Action("Delete", "Customer", new { id = item.CustomerId })"><i class="fi-page-delete"></i></a>
+            </td>
+        </tr>
+    }
 
 </table>
-<div class="row" style="margin-top:20px">
-    <div align="right" style="font-size:1.5em;margin:20px">
-        @Html.ActionLink("Create New ", "Create")
-        @Html.ActionLink(" ", "Create", null, new { @class = "fi-page-add" })
+
+<div class="row">
+    <div class="small-8 column"></div>
+    <div class="small-4 column right">
+        <div class="right" style="font-size:1.8em">
+                @Html.ActionLink("Create New ", "Create")
+                @Html.ActionLink(" ", "Create", null, new { @class = "fi-page-add" })
+        </div>
     </div>
 </div>

@@ -1,13 +1,13 @@
 ﻿@import "foundation/normalize.css";
 @import "foundation/foundation.css";
 @import "foundation/foundation-icons.css";
-@import "foundation/foundation-icons.eot";
-@import "foundation/foundation-icons.svg";
-@import "foundation/foundation-icons.ttf";
-@import "foundation/foundation-icons.woff";
 
 
 body {
-    background-image: url('Images/Backgrounds/gplaypattern.png');
+    background-image: url('Images/Backgrounds/congruent_outline.png');
     background-repeat: repeat;
+}
+
+.has-shadow {
+    box-shadow: 3px 3px 3px #888888;
 }
