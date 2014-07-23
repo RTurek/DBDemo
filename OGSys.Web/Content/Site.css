@@ -1,2 +1,7 @@
 ﻿@import "foundation/normalize.css";
 @import "foundation/foundation.css";
+
+body {
+    background-image: url('Images/Backgrounds/gplaypattern.png');
+    background-repeat: repeat;
+}
