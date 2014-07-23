@@ -36,6 +36,7 @@ namespace OGSys.Web.Controllers
         }
 
         // GET: Customer/Create
+        [Authorize(Roles = "canEdit")]
         public ActionResult Create()
         {
             return View();
@@ -46,6 +47,7 @@ namespace OGSys.Web.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "canEdit")]
         public ActionResult Create([Bind(Include = "CustomerId,FirstName,LastName,CompanyName,Address,City,State,Zip,PhoneNumber,Email")] Customer customer)
         {
             if (ModelState.IsValid)
@@ -59,6 +61,7 @@ namespace OGSys.Web.Controllers
         }
 
         // GET: Customer/Edit/5
+        [Authorize(Roles = "canEdit")]
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -78,6 +81,7 @@ namespace OGSys.Web.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "canEdit")]
         public ActionResult Edit([Bind(Include = "CustomerId,FirstName,LastName,CompanyName,Address,City,State,Zip,PhoneNumber,Email")] Customer customer)
         {
             if (ModelState.IsValid)

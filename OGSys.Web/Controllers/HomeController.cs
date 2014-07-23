@@ -9,6 +9,7 @@ namespace OGSys.Web.Controllers
     [RequireHttps]
     public class HomeController : Controller
     {
+        [AllowAnonymous]
         public ActionResult Index()
         {
             return View();
