@@ -4,29 +4,28 @@
     ViewBag.Title = "Customer Database";
 }
 
-<div class="row" style="margin-top:30px">
-    <div class="medium-8 columns">
-        <h2>Demo Customer Database</h2>
+<div class="row">
+    <div class="small-9 columns">
+        <h1>Demo Customer Database</h1>
     </div>
-    <div class="medium-4 columns" align="right">
-        <p>
-            @Html.ActionLink("Create New Customer", "Create", null, new { @class = "small button" })
-        </p>
+    <div align="right" style="font-size:1.5em;margin:20px">
+        @Html.ActionLink("Create New ", "Create")
+        @Html.ActionLink(" ", "Create", null, new { @class = "fi-page-add" })
     </div>
 </div>
 
-<table>
+<table style="width:100%">
     <tr>
         <th>Name</th>
         <th>Company</th>
         <th>Phone</th>
-        <th style="max-width:10%">Email</th>
-        <th>Options</th>
+        <th style="max-width:100px">Email</th>
+        <th style="min-width:120px">Options</th>
     </tr>
 
 @foreach (var item in Model) {
     <tr>
-        <td>@Html.DisplayFor(modelItem => item.LastName), @Html.DisplayFor(modelItem => item.FirstName)</td>
+        <td style="max-width:150px">@Html.DisplayFor(modelItem => item.LastName), @Html.DisplayFor(modelItem => item.FirstName)</td>
         <td>
             @Html.DisplayFor(modelItem => item.CompanyName)
         </td>
@@ -34,12 +33,18 @@
             @Html.DisplayFor(modelItem => item.PhoneNumber)
         </td>
         <td>@Html.DisplayFor(modelItem => item.Email)</td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.CustomerId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.CustomerId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.CustomerId })
+        <td style="font-size:2em">
+            <a href="@Url.Action("Edit", "Customer", new { id = item.CustomerId })"><i class="fi-page-edit"></i></a>
+            <a href="@Url.Action("Details", "Customer", new { id = item.CustomerId })"><i class="fi-info"></i></a>
+            <a href="@Url.Action("Delete", "Customer", new { id = item.CustomerId })"><i class="fi-page-delete"></i></a>
         </td>
     </tr>
 }
 
 </table>
+<div class="row" style="margin-top:20px">
+    <div align="right" style="font-size:1.5em;margin:20px">
+        @Html.ActionLink("Create New ", "Create")
+        @Html.ActionLink(" ", "Create", null, new { @class = "fi-page-add" })
+    </div>
+</div>
