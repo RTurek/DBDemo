@@ -18,9 +18,9 @@
                 <div style="margin:10px">
                     @RenderBody()
                     <hr />
-                    <footer id="footer">
-                        <p>&copy; @DateTime.Now.Year - <a href="http://www.rturek.com/" target="_blank">Ryan.Turek</a></p>
-                    </footer>
+                    <section id="footer">
+                        @Html.Partial("_Footer")
+                    </section>
                 </div>
             </div>
         </div>
