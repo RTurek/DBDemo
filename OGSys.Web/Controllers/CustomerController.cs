@@ -21,6 +21,7 @@ namespace OGSys.Web.Controllers
         }
 
         // GET: Customer/Details/5
+        [Authorize(Roles = "canEdit")]
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -94,6 +95,7 @@ namespace OGSys.Web.Controllers
         }
 
         // GET: Customer/Delete/5
+        [Authorize(Roles = "canEdit")]
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -111,6 +113,7 @@ namespace OGSys.Web.Controllers
         // POST: Customer/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "canEdit")]
         public ActionResult DeleteConfirmed(int id)
         {
             Customer customer = db.Customers.Find(id);
