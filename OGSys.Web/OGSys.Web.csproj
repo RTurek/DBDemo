@@ -199,8 +199,12 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\foundation\.fontcustom-data" />
     <Content Include="Content\foundation\foundation-icons.css" />
+    <Content Include="Content\foundation\foundation-icons.eot" />
     <Content Include="Content\foundation\foundation-icons.svg" />
+    <Content Include="Content\foundation\foundation-icons.ttf" />
+    <Content Include="Content\foundation\foundation-icons.woff" />
     <Content Include="Content\foundation\foundation.css" />
     <Content Include="Content\foundation\foundation.mvc.css" />
     <Content Include="Content\foundation\normalize.css" />
@@ -509,11 +513,6 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="App_Readme\Foundation_readme.md" />
-    <Content Include="Content\foundation\.DS_Store" />
-    <Content Include="Content\foundation\.fontcustom-data" />
-    <Content Include="Content\foundation\foundation-icons.eot" />
-    <Content Include="Content\foundation\foundation-icons.ttf" />
-    <Content Include="Content\foundation\foundation-icons.woff" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\foundation\fastclick.js" />
     <Content Include="Scripts\foundation\foundation.abide.js" />
