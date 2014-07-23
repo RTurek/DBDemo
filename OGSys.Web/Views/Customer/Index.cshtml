@@ -14,7 +14,7 @@
     <tr>
         <th>Name</th>
         <th>Company</th>
-        <th>Phone</th>
+        @*<th>Phone</th>*@
         <th style="max-width:100px">Email</th>
         <th style="min-width:110px">Options</th>
     </tr>
@@ -23,12 +23,8 @@
     {
         <tr>
             <td style="max-width:150px">@Html.DisplayFor(modelItem => item.LastName), @Html.DisplayFor(modelItem => item.FirstName)</td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CompanyName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PhoneNumber)
-            </td>
+            <td>@Html.DisplayFor(modelItem => item.CompanyName)</td>
+            @*<td>@Html.DisplayFor(modelItem => item.PhoneNumber)</td>*@
             <td>@Html.DisplayFor(modelItem => item.Email)</td>
             <td style="font-size:1.8em">
                 <a href="@Url.Action("Edit", "Customer", new { id = item.CustomerId })"><i class="fi-page-edit"></i></a>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Customer Manager Demo</title>
+    <title>@ViewBag.Title - OGSys Demo App</title>
     @Styles.Render("~/Content/Site.css")
     @Scripts.Render("~/bundles/modernizr")
     <meta name="description" content="OGSys Demo Application" />
@@ -15,29 +15,29 @@
 
     <section id="content">
         <div class="row">
-            <div class="large-12 column" style="background-color:white;border: 1px solid #cccccc; box-shadow: black 10px;">
-                <div style="margin:25px">
+            <div class="large-12 column" style="background-color:white;border: 1px solid #cccccc;">
+                <div style="margin-top:25px;margin-bottom:25px;margin-left:2.5%;margin-right:2.5%">
                     @RenderBody()
                     <hr />
                     <section id="footer" style="margin-bottom:50px;">
                         @Html.Partial("_Footer")
                     </section>
                 </div>
+                </div>
             </div>
-        </div>
     </section>
 
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/foundation")
     @RenderSection("scripts", required: false)
-    
+
     <script src="~/Scripts/jquery-1.10.2.js"></script>
     <script src="~/Scripts/foundation/foundation.js"></script>
     <script src="~/Scripts/foundation/foundation.topbar.js"></script>
 
     <script>
-            $(document).foundation();
+        $(document).foundation();
     </script>
 </body>
 </html>
