@@ -19,7 +19,7 @@
         <div class="medium-6 column">
             <div class="row">
                 <div class="small-4 column">
-                    <label>First Name</label>
+                    <label>*First Name</label>
                 </div>
                 <div class="small-8 column">
                     @Html.EditorFor(model => model.FirstName, new { htmlAttributes = new { @class = "form-control" } })
@@ -29,7 +29,7 @@
 
             <div class="row">
                 <div class="small-4 column">
-                    <label>Last Name</label>
+                    <label>*Last Name</label>
                 </div>
                 <div class="small-8 column">
                     @Html.EditorFor(model => model.LastName, new { htmlAttributes = new { @class = "form-control" } })
@@ -39,7 +39,7 @@
 
             <div class="row">
                 <div class="small-4 column">
-                    <label>Employer</label>
+                    <label>*Employer</label>
                 </div>
                 <div class="small-8 column">
                     @Html.EditorFor(model => model.CompanyName, new { htmlAttributes = new { @class = "form-control" } })
@@ -49,7 +49,7 @@
 
             <div class="row">
                 <div class="small-4 column">
-                    <label>Main Phone</label>
+                    <label>*Phone</label>
                 </div>
                 <div class="small-8 column">
                     @Html.EditorFor(model => model.PhoneNumber, new { htmlAttributes = new { @class = "form-control" } })
@@ -59,7 +59,7 @@
 
             <div class="row">
                 <div class="small-4 column">
-                    <label>Email</label>
+                    <label>*Email</label>
                 </div>
                 <div class="small-8 column">
                     @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
@@ -121,7 +121,8 @@
     </div>
 }
 
-<span style="font-style:italic">*No fields are currently required.</span>
+<span style="font-style:italic;margin-right:auto">* Required Field   </span>
+
 
 
 @section Scripts {

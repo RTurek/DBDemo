@@ -12,7 +12,8 @@ namespace OGSys.Web.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
+            AutomaticMigrationDataLossAllowed = true;
             ContextKey = "OGSys.Web.Models.ApplicationDbContext";
         }
 
