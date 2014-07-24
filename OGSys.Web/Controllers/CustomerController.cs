@@ -21,7 +21,6 @@ namespace OGSys.Web.Controllers
         }
 
         // GET: Customer/Details/5
-        [Authorize(Roles = "canEdit")]
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -82,7 +81,6 @@ namespace OGSys.Web.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles = "canEdit")]
         public ActionResult Edit([Bind(Include = "CustomerId,FirstName,LastName,CompanyName,Address,City,State,Zip,PhoneNumber,Email")] Customer customer)
         {
             if (ModelState.IsValid)
@@ -95,7 +93,6 @@ namespace OGSys.Web.Controllers
         }
 
         // GET: Customer/Delete/5
-        [Authorize(Roles = "canEdit")]
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -113,7 +110,6 @@ namespace OGSys.Web.Controllers
         // POST: Customer/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles = "canEdit")]
         public ActionResult DeleteConfirmed(int id)
         {
             Customer customer = db.Customers.Find(id);
