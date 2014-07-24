@@ -12,15 +12,15 @@ namespace OGSys.Web.Migrations
                 c => new
                     {
                         CustomerId = c.Int(nullable: false, identity: true),
-                        FirstName = c.String(),
-                        LastName = c.String(),
-                        CompanyName = c.String(),
+                        FirstName = c.String(nullable: false),
+                        LastName = c.String(nullable: false),
+                        CompanyName = c.String(nullable: false),
                         Address = c.String(),
                         City = c.String(),
                         State = c.String(),
                         Zip = c.String(),
-                        PhoneNumber = c.String(),
-                        Email = c.String(),
+                        PhoneNumber = c.String(nullable: false),
+                        Email = c.String(nullable: false),
                     })
                 .PrimaryKey(t => t.CustomerId);
             
