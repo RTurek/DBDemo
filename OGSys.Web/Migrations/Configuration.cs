@@ -18,6 +18,7 @@ namespace OGSys.Web.Migrations
 
         bool AddUserAndRole(OGSys.Web.Models.ApplicationDbContext context)
         {
+            // This does not seem to work. Admin must add a canEdit role manually to the Azure database right now.
             IdentityResult ir;
             var rm = new RoleManager<IdentityRole>
                 (new RoleStore<IdentityRole>(context));
