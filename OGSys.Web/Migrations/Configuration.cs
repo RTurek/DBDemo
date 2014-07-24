@@ -17,29 +17,29 @@ namespace OGSys.Web.Migrations
             ContextKey = "OGSys.Web.Models.ApplicationDbContext";
         }
 
-        //bool AddUserAndRole(OGSys.Web.Models.ApplicationDbContext context)
-        //{
-        //    // This does not seem to work. Admin must add a canEdit role manually to the Azure database right now.
-        //    IdentityResult ir;
-        //    var rm = new RoleManager<IdentityRole>
-        //        (new RoleStore<IdentityRole>(context));
-        //    ir = rm.Create(new IdentityRole("canEdit"));
-        //    var um = new UserManager<ApplicationUser>(
-        //        new UserStore<ApplicationUser>(context));
-        //    var user = new ApplicationUser()
-        //    {
-        //        UserName = "user@website.com",
-        //    };
-        //    ir = um.Create(user, "123456");
-        //    if (ir.Succeeded == false)
-        //        return ir.Succeeded;
-        //    ir = um.AddToRole(user.Id, "canEdit");
-        //    return ir.Succeeded;
-        //}
+        bool AddUserAndRole(OGSys.Web.Models.ApplicationDbContext context)
+        {
+            // This does not seem to work. Admin must add a canEdit role manually to the Azure database right now.
+            IdentityResult ir;
+            var rm = new RoleManager<IdentityRole>
+                (new RoleStore<IdentityRole>(context));
+            ir = rm.Create(new IdentityRole("canEdit"));
+            var um = new UserManager<ApplicationUser>(
+                new UserStore<ApplicationUser>(context));
+            var user = new ApplicationUser()
+            {
+                UserName = "user@website.com",
+            };
+            ir = um.Create(user, "123456");
+            if (ir.Succeeded == false)
+                return ir.Succeeded;
+            ir = um.AddToRole(user.Id, "canEdit");
+            return ir.Succeeded;
+        }
 
         protected override void Seed(OGSys.Web.Models.ApplicationDbContext context)
         {
-            // AddUserAndRole(context);
+            AddUserAndRole(context);
 
             //  This method will be called after migrating to the latest version.
 
