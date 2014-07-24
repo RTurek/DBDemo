@@ -9,7 +9,9 @@
 <div class="row" style="margin-bottom: 10px">
     <div>
         <hr />
-        <h5>View details, edit, or delete this customer. Return to customer database to add a new customer.</h5>
+        <h5>
+            View, edit, or delete this customer.
+        </h5>
         <hr />
     </div>
 </div>
@@ -18,94 +20,85 @@
     <div class="medium-12 column">
         <div class="contentBox has-shadow">
             <section id="customerDetails">
-                <h4>Customer</h4>
-                <hr />
-                <div class="row">
 
-                    <div class="medium-6 column">
+                <div class="row">
+                    <div class="medium-12 column">
+                        <h3><span class="customer-label">@Html.DisplayFor(model => model.FirstName) @Html.DisplayFor(model => model.LastName)</span></h3>
+                        <hr />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="medium-12 column">
                         <div class="row customer-details">
-                            <div class="small-4 column">
-                                <label>@Html.DisplayNameFor(model => model.FirstName)</label>
+                            <div class="small-3 column">
+                                <span class="customer-label">@Html.DisplayNameFor(model => model.CompanyName)</span>
                             </div>
-                            <div class="small-8 column">
-                                @Html.DisplayFor(model => model.FirstName)
-                            </div>
-                        </div>
-                        <div class="row customer-details">
-                            <div class="small-4 column">
-                                <label>@Html.DisplayNameFor(model => model.LastName)</label>
-                            </div>
-                            <div class="small-8 column">
-                                @Html.DisplayFor(model => model.LastName)
-                            </div>
-                        </div>
-                        <div class="row customer-details">
-                            <div class="small-4 column">
-                                <label>@Html.DisplayNameFor(model => model.CompanyName)</label>
-                            </div>
-                            <div class="small-8 column">
+                            <div class="small-9 column">
                                 @Html.DisplayFor(model => model.CompanyName)
                             </div>
                         </div>
                         <div class="row customer-details">
-                            <div class="small-4 column">
-                                <label>@Html.DisplayNameFor(model => model.PhoneNumber)</label>
+                            <div class="small-3 column">
+                                <span class="customer-label">@Html.DisplayNameFor(model => model.PhoneNumber)</span>
                             </div>
-                            <div class="small-8 column">
+                            <div class="small-9 column">
                                 @Html.DisplayFor(model => model.PhoneNumber)
                             </div>
                         </div>
                         <div class="row customer-details">
-                            <div class="small-4 column">
-                                <label>@Html.DisplayNameFor(model => model.Email)</label>
+                            <div class="small-3 column">
+                                <span class="customer-label">@Html.DisplayNameFor(model => model.Email)</span>
                             </div>
-                            <div class="small-8 column">
+                            <div class="small-9 column">
                                 @Html.DisplayFor(model => model.Email)
                             </div>
                         </div>
-                    </div>
-
-                    <div class="medium-6 column">
                         <div class="row customer-details">
-                            <div class="small-4 column">
-                                <label>@Html.DisplayNameFor(model => model.Address)</label>
+                            <div class="small-3 column">
+                                <span class="customer-label">@Html.DisplayNameFor(model => model.Address)</span>
                             </div>
-                            <div class="small-8 column">
+                            <div class="small-9 column">
                                 @Html.DisplayFor(model => model.Address)
                             </div>
                         </div>
                         <div class="row customer-details">
-                            <div class="small-4 column">
-                                <label>@Html.DisplayNameFor(model => model.City)</label>
+                            <div class="small-3 column">
+                                <span class="customer-label">@Html.DisplayNameFor(model => model.City)</span>
                             </div>
-                            <div class="small-8 column">
+                            <div class="small-9 column">
                                 @Html.DisplayFor(model => model.City)
                             </div>
                         </div>
                         <div class="row customer-details">
-                            <div class="small-4 column">
-                                <label>@Html.DisplayNameFor(model => model.State)</label>
+                            <div class="small-3 column">
+                                <span class="customer-label">@Html.DisplayNameFor(model => model.State)</span>
                             </div>
-                            <div class="small-8 column">
+                            <div class="small-9 column">
                                 @Html.DisplayFor(model => model.State)
                             </div>
                         </div>
                         <div class="row customer-details">
-                            <div class="small-4 column">
-                                <label>@Html.DisplayNameFor(model => model.Zip)</label>
+                            <div class="small-3 column">
+                                <span class="customer-label">@Html.DisplayNameFor(model => model.Zip)</span>
                             </div>
-                            <div class="small-8 column">
+                            <div class="small-9 column">
                                 @Html.DisplayFor(model => model.Zip)
                             </div>
                         </div>
                     </div>
-
                 </div>
+                
+                <div class="row">
+                    <div class="button-bar right" style="padding-right:15px">
+                        @Html.ActionLink("Edit Customer Details", "Edit", new { id = Model.CustomerId }, new { @class = "small button" })
+                        @Html.ActionLink("Back to List", "Index", null, new { @class = "small button" })
+                    </div>
+                </div>
+
             </section>
+
         </div>
-        </div>
-        </div>
-        <p>
-            @Html.ActionLink("Edit", "Edit", new { id = Model.CustomerId }) |
-            @Html.ActionLink("Back to List", "Index")
-        </p>
+    </div>
+</div>
+

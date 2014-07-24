@@ -25,6 +25,9 @@ body {
 }
 
 .customer-details {
-    margin-bottom: 30px;
-    margin: 50px
+    padding: 8px;
+}
+
+.customer-label {
+    font-weight: bold;
 }
