@@ -16,7 +16,7 @@ namespace OGSys.Web.Migrations
             ContextKey = "OGSys.Web.Models.ApplicationDbContext";
         }
 
-        bool AddUserAndRole(OGSys.Web.Models.ApplicationDbContext context)
+        private bool AddUserAndRole(OGSys.Web.Models.ApplicationDbContext context)
         {
             IdentityResult ir;
             var rm = new RoleManager<IdentityRole>
@@ -26,7 +26,7 @@ namespace OGSys.Web.Migrations
                 new UserStore<ApplicationUser>(context));
             var user = new ApplicationUser()
             {
-                UserName = "admin@RTurek.com",
+                UserName = "user1@website.com",
             };
             ir = um.Create(user, "123456");
             if (ir.Succeeded == false)
