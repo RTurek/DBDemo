@@ -199,6 +199,9 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css-social-buttons-master\css\zocial-regular-webfont.svg" />
+    <Content Include="Content\css-social-buttons-master\css\zocial.css" />
+    <Content Include="Content\css-social-buttons-master\sample.html" />
     <Content Include="Content\foundation\.fontcustom-data" />
     <Content Include="Content\foundation\foundation-icons.css" />
     <Content Include="Content\foundation\foundation-icons.eot" />
@@ -513,6 +516,10 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="App_Readme\Foundation_readme.md" />
+    <Content Include="Content\css-social-buttons-master\css\zocial-regular-webfont.eot" />
+    <Content Include="Content\css-social-buttons-master\css\zocial-regular-webfont.ttf" />
+    <Content Include="Content\css-social-buttons-master\css\zocial-regular-webfont.woff" />
+    <Content Include="Content\css-social-buttons-master\README.md" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\foundation\fastclick.js" />
     <Content Include="Scripts\foundation\foundation.abide.js" />
