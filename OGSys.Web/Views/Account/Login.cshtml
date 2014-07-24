@@ -5,25 +5,12 @@
     ViewBag.Title = "Log in";
 }
 
-<style>
-    .contentBox {
-        border: #cccccc 1px solid;
-        background-color: white;
-        padding: 10px;
-        margin-left: -10px;
-        margin-right: -10px;
-        margin-bottom: 10px;
-        min-height: 24rem;
-        padding: 30px;
-    }
-</style>
-
 <h1>@ViewBag.Title</h1>
 
 <div class="row" style="margin-bottom: 10px">
     <div>
         <hr />
-        <h5>Please log in to gain access to the customer database for testing.</h5>
+        <h5>Please log in or <a href="@Url.Action("Register","Account")">register</a> to gain access to the customer database for testing.</h5>
     </div>
     <hr />
 </div>
@@ -61,24 +48,26 @@
                         </div>
                     </div>
                     <div class="button-group" align="right" style="margin-top:2rem">
-                            <input type="submit" value="Log in" class="small button" />
-                            @Html.ActionLink("Register as a new user", "Register", null, new {@class="small button"})
+                        <input type="submit" value="Log in" class="small button" />
+                        @Html.ActionLink("Register as a new user", "Register", null, new { @class = "small button" })
                     </div>
                     @* Enable this once you have account confirmation enabled for password reset functionality
-                <p>
-                    @Html.ActionLink("Forgot your password?", "ForgotPassword")
-                </p>*@
-            }
+                        <p>
+                            @Html.ActionLink("Forgot your password?", "ForgotPassword")
+                        </p>*@
+                }
             </section>
         </div>
     </div>
+
     <div class="medium-6 column">
         <div class="contentBox has-shadow">
             <section id="socialLoginForm">
                 @Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { Action = "ExternalLogin", ReturnUrl = ViewBag.ReturnUrl })
             </section>
         </div>
-        </div>
+    </div>
+
 </div>
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
