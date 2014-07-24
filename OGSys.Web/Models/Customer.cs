@@ -45,7 +45,7 @@ namespace OGSys.Web.Models
 
         [Required]
         [Phone]
-        [StringLength(11, ErrorMessage = "Phone number may only be 10 or 11 characters long", MinimumLength = 10)]
+        [StringLength(14, ErrorMessage = "Phone number may only be 10 to 14 characters long", MinimumLength = 10)]
         [DataType(DataType.PhoneNumber)]
         [Display(Name = "Phone")]
         public string PhoneNumber { get; set; }

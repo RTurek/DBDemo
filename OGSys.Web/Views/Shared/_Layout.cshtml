@@ -13,18 +13,21 @@
         @Html.Partial("_TopBar")
     </section>
 
-    <section id="content">
-        <div class="row">
-            <div class="large-12 column" style="background-color:white;border: 1px solid #cccccc;">
-                <div style="margin-top:25px;margin-bottom:25px;margin-left:2.5%;margin-right:2.5%">
+    <section id="content" style="min-height:800px">
+        <div class="row" style="min-height:800px">
+            <div class="large-12 column" style="background-color:white;border: 1px solid #cccccc;min-height:800px">
+                <div style="margin:2.5%; min-height:800px">
                     @RenderBody()
-                    <hr />
-                    <section id="footer" style="margin-bottom:50px;">
+                </div>
+            </div>
+            <div class="large-12 column" style="background-color:white;border: 1px solid #cccccc;">
+                <div style="margin:2.5%;">
+                    <section id="footer" style="margin-bottom:15px;">
                         @Html.Partial("_Footer")
                     </section>
                 </div>
-                </div>
             </div>
+        </div>
     </section>
 
 
