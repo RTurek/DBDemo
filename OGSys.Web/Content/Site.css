@@ -23,3 +23,8 @@ body {
     min-height: 24rem;
     padding: 30px;
 }
+
+.customer-details {
+    margin-bottom: 30px;
+    margin: 50px
+}
