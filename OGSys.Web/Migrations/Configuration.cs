@@ -13,13 +13,10 @@ namespace OGSys.Web.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            AutomaticMigrationDataLossAllowed = false;
-            ContextKey = "OGSys.Web.Models.ApplicationDbContext";
         }
 
         bool AddUserAndRole(OGSys.Web.Models.ApplicationDbContext context)
         {
-            // This does not seem to work. Admin must add a canEdit role manually to the Azure database right now.
             IdentityResult ir;
             var rm = new RoleManager<IdentityRole>
                 (new RoleStore<IdentityRole>(context));
@@ -28,7 +25,7 @@ namespace OGSys.Web.Migrations
                 new UserStore<ApplicationUser>(context));
             var user = new ApplicationUser()
             {
-                UserName = "user@website.com",
+                UserName = "admin@rturek.com",
             };
             ir = um.Create(user, "123456");
             if (ir.Succeeded == false)
@@ -39,13 +36,14 @@ namespace OGSys.Web.Migrations
 
         protected override void Seed(OGSys.Web.Models.ApplicationDbContext context)
         {
+
             AddUserAndRole(context);
 
             //  This method will be called after migrating to the latest version.
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data. E.g.
-            //
+
             context.Customers.AddOrUpdate(
               p => p.FirstName,
               new Customer
@@ -57,7 +55,7 @@ namespace OGSys.Web.Migrations
                   City = "Addison",
                   State = "Texas",
                   Zip = "75001",
-                  PhoneNumber = "2146134444",
+                  PhoneNumber = "(214)613-4444",
                   Email = "Improver@ImprovingEnterprises.com"
               },
               new Customer
@@ -69,7 +67,7 @@ namespace OGSys.Web.Migrations
                   City = "Addison",
                   State = "Texas",
                   Zip = "75001",
-                  PhoneNumber = "2146134444",
+                  PhoneNumber = "(214)613-4444",
                   Email = "Improver@ImprovingEnterprises.com"
               },
               new Customer
@@ -81,7 +79,7 @@ namespace OGSys.Web.Migrations
                   City = "Addison",
                   State = "Texas",
                   Zip = "75001",
-                  PhoneNumber = "2146134444",
+                  PhoneNumber = "(214)613-4444",
                   Email = "Improver@ImprovingEnterprises.com"
               },
               new Customer
@@ -93,7 +91,7 @@ namespace OGSys.Web.Migrations
                   City = "Addison",
                   State = "Texas",
                   Zip = "75001",
-                  PhoneNumber = "2146134444",
+                  PhoneNumber = "(214)613-4444",
                   Email = "Improver@ImprovingEnterprises.com"
               },
               new Customer
@@ -105,7 +103,7 @@ namespace OGSys.Web.Migrations
                   City = "Addison",
                   State = "Texas",
                   Zip = "75001",
-                  PhoneNumber = "2146134444",
+                  PhoneNumber = "(214)613-4444",
                   Email = "Improver@ImprovingEnterprises.com"
               },
               new Customer
@@ -117,10 +115,11 @@ namespace OGSys.Web.Migrations
                   City = "Addison",
                   State = "Texas",
                   Zip = "75001",
-                  PhoneNumber = "2146134444",
+                  PhoneNumber = "(214)613-4444",
                   Email = "Improver@ImprovingEnterprises.com"
               }
             );
+            
         }
     }
 }

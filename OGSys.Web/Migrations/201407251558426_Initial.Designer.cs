@@ -13,7 +13,7 @@ namespace OGSys.Web.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201407211708550_Initial"; }
+            get { return "201407251558426_Initial"; }
         }
         
         string IMigrationMetadata.Source
