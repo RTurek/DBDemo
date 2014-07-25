@@ -491,6 +491,7 @@
     <Content Include="Content\foundation\svgs\fi-yen.svg" />
     <Content Include="Content\foundation\svgs\fi-zoom-in.svg" />
     <Content Include="Content\foundation\svgs\fi-zoom-out.svg" />
+    <Content Include="Content\Images\azure-db.png" />
     <Content Include="Content\Images\Backgrounds\congruent_outline.png" />
     <Content Include="Content\Images\Backgrounds\dark_geometric.png" />
     <Content Include="Content\Images\Backgrounds\dark_geometric_%402X.png" />
@@ -506,8 +507,19 @@
     <Content Include="Content\Images\Backgrounds\random_grey_variations_%402X.png" />
     <Content Include="Content\Images\Backgrounds\use_your_illusion.png" />
     <Content Include="Content\Images\Backgrounds\use_your_illusion_%402X.png" />
+    <Content Include="Content\Images\cloud-computing.png" />
     <Content Include="Content\Images\logo.png" />
     <Content Include="Content\Images\ogsys-logo.jpg" />
+    <Content Include="Content\Images\Tech-Icons\c-sharp.png" />
+    <Content Include="Content\Images\Tech-Icons\CSS3.png" />
+    <Content Include="Content\Images\Tech-Icons\foundation.png" />
+    <Content Include="Content\Images\Tech-Icons\Git-Icon-Black.png" />
+    <Content Include="Content\Images\Tech-Icons\google_developers_logo.png" />
+    <Content Include="Content\Images\Tech-Icons\HTML5.png" />
+    <Content Include="Content\Images\Tech-Icons\JavaScript.png" />
+    <Content Include="Content\Images\Tech-Icons\Octocat.png" />
+    <Content Include="Content\Images\Tech-Icons\Visual_Studio_2012.png" />
+    <Content Include="Content\Images\Tech-Icons\windows-azure.png" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
