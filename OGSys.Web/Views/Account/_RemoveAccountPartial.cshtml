@@ -3,13 +3,15 @@
 @if (Model.Count > 0)
 {
     <h4>Registered Logins</h4>
-    <table>
-        <tbody>
+    <div class="row">
+        <div>
             @foreach (var account in Model)
             {
-                <tr>
-                    <td>@account.LoginProvider</td>
-                    <td>
+                <div>
+                    <div class="small-6 column">
+                        @account.LoginProvider
+                    </div>
+                    <div class="small-6 column">
                         @if (ViewBag.ShowRemoveButton)
                         {
                             using (Html.BeginForm("Disassociate", "Account"))
@@ -18,7 +20,7 @@
                             <div>
                                 @Html.Hidden("loginProvider", account.LoginProvider)
                                 @Html.Hidden("providerKey", account.ProviderKey)
-                                <input type="submit" class="small button" value="Remove" title="Remove this @account.LoginProvider login from your account" />
+                                <input type="submit" class="tiny button" value="Remove" title="Remove this @account.LoginProvider login from your account" />
                             </div>
                             }
                         }
@@ -26,9 +28,9 @@
                         {
                             @: &nbsp;
                         }
-                    </td>
-                </tr>
+                    </div>
+                </div>
             }
-        </tbody>
-    </table>
+        </div>
+    </div>
 }
