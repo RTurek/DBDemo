@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OGSys.Web;
 using OGSys.Web.Controllers;
+using OGSys.Web.Models;
 
 namespace OGSys.Web.Tests.Controllers
 {

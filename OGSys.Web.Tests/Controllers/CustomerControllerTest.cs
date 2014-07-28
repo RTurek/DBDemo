@@ -13,6 +13,13 @@ namespace OGSys.Web.Tests.Controllers
     [TestClass]
     public class CustomerControllerTest
     {
+        [TestInitialize]
+        public void Test_Setup()
+        {
+            
+        }
+
+        [Ignore]
         [TestMethod]
         public void Customer_Index_Is_Not_Null()
         {
@@ -26,6 +33,7 @@ namespace OGSys.Web.Tests.Controllers
             Assert.IsNotNull(result);
         }
 
+        [Ignore]
         [TestMethod]
         public void Customer_Details_Returns_A_Customer_Model()
         {
