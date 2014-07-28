@@ -15,4 +15,4 @@ Overview
 
 Technologies
 =====
-C#, ASP.NET, HTML5, Razer, CSS3, JavaScript, jQuery, Orbit, Reveal, Sublime, Git, Sass, Compass, Chrome, SQL, Node.js, Ruby 1.9, Foundation 5, ADO.Net Entity Framework, Highway.Data, Microsoft Azure, Visual Studio Ultimate 2013, Adobe Photoshop CC 2014, Google Developers/Apps.
+HTML5, CSS3, ASP.NET MVC 5, C# 5.0, Razor View Engine, JavaScript, jQuery, Git , Public Github Repository, Compass, Chrome, SQL, Zurb Foundation 5, Desktop/Mobile Responsive Design , ASPNet Membership API, ADO.Net Entity Framework, Highway.Data, Deployed to Microsoft Azure , Visual Studio Ultimate 2013, Adobe Photoshop CC 2014, Google Developers/Apps , Sample User Data.
