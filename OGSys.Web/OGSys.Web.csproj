@@ -510,7 +510,9 @@
     <Content Include="Content\Images\cloud-computing.png" />
     <Content Include="Content\Images\logo.png" />
     <Content Include="Content\Images\ogsys-logo.jpg" />
+    <Content Include="Content\Images\Tech-Icons\aspnet_logo.png" />
     <Content Include="Content\Images\Tech-Icons\c-sharp.png" />
+    <Content Include="Content\Images\Tech-Icons\chrome-logo.png" />
     <Content Include="Content\Images\Tech-Icons\CSS3.png" />
     <Content Include="Content\Images\Tech-Icons\foundation.png" />
     <Content Include="Content\Images\Tech-Icons\Git-Icon-Black.png" />
@@ -518,6 +520,8 @@
     <Content Include="Content\Images\Tech-Icons\HTML5.png" />
     <Content Include="Content\Images\Tech-Icons\JavaScript.png" />
     <Content Include="Content\Images\Tech-Icons\Octocat.png" />
+    <Content Include="Content\Images\Tech-Icons\photoshop.png" />
+    <Content Include="Content\Images\Tech-Icons\sql-logo.png" />
     <Content Include="Content\Images\Tech-Icons\Visual_Studio_2012.png" />
     <Content Include="Content\Images\Tech-Icons\windows-azure.png" />
     <Content Include="favicon.ico" />
