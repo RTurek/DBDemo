@@ -1,8 +1,8 @@
-OGSys Test Application
+Database Test Application
 =====
 This is a small demo application developed to gain more exposure to some of the technologies listed below.
 
-Live Demo: https://ogsys.azurewebsites.net/
+Live Demo: https://dbtests.azurewebsites.net/
 
 Developed by: Ryan Turek | Blog (http://rturek.com/) | Twitter (https://twitter.com/rjturek)
 
