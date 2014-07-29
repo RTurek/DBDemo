@@ -508,6 +508,7 @@
     <Content Include="Content\Images\Backgrounds\use_your_illusion.png" />
     <Content Include="Content\Images\Backgrounds\use_your_illusion_%402X.png" />
     <Content Include="Content\Images\cloud-computing.png" />
+    <Content Include="Content\Images\dbdemo-icon.png" />
     <Content Include="Content\Images\logo.png" />
     <Content Include="Content\Images\ogsys-logo.jpg" />
     <Content Include="Content\Images\Tech-Icons\aspnet_logo.png" />
