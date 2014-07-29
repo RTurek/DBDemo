@@ -1,4 +1,4 @@
-namespace OGSys.Web.Migrations
+namespace DBDemo.Web.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;

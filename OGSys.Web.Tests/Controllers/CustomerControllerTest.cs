@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using OGSys.Web;
-using OGSys.Web.Controllers;
-using OGSys.Web.Models;
+using DBDemo.Web;
+using DBDemo.Web.Controllers;
+using DBDemo.Web.Models;
 
-namespace OGSys.Web.Tests.Controllers
+namespace DBDemo.Web.Tests.Controllers
 {
     [TestClass]
     public class CustomerControllerTest

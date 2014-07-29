@@ -10,9 +10,9 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Owin;
-using OGSys.Web.Models;
+using DBDemo.Web.Models;
 
-namespace OGSys.Web.Controllers
+namespace DBDemo.Web.Controllers
 {
     [Authorize]
     public class AccountController : Controller

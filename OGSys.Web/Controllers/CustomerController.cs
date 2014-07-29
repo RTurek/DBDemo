@@ -6,9 +6,9 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using OGSys.Web.Models;
+using DBDemo.Web.Models;
 
-namespace OGSys.Web.Controllers
+namespace DBDemo.Web.Controllers
 {
     public class CustomerController : Controller
     {

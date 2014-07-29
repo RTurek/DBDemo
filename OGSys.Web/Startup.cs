@@ -1,8 +1,8 @@
 ﻿using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(OGSys.Web.Startup))]
-namespace OGSys.Web
+[assembly: OwinStartupAttribute(typeof(DBDemo.Web.Startup))]
+namespace DBDemo.Web
 {
     public partial class Startup
     {

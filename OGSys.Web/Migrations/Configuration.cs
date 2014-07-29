@@ -1,21 +1,21 @@
-namespace OGSys.Web.Migrations
+namespace DBDemo.Web.Migrations
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
-    using OGSys.Web.Models;
+    using DBDemo.Web.Models;
     using Microsoft.AspNet.Identity;
     using Microsoft.AspNet.Identity.EntityFramework;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<OGSys.Web.Models.ApplicationDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<DBDemo.Web.Models.ApplicationDbContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        bool AddUserAndRole(OGSys.Web.Models.ApplicationDbContext context)
+        bool AddUserAndRole(DBDemo.Web.Models.ApplicationDbContext context)
         {
             IdentityResult ir;
             var rm = new RoleManager<IdentityRole>
@@ -34,7 +34,7 @@ namespace OGSys.Web.Migrations
             return ir.Succeeded;
         }
 
-        protected override void Seed(OGSys.Web.Models.ApplicationDbContext context)
+        protected override void Seed(DBDemo.Web.Models.ApplicationDbContext context)
         {
 
             AddUserAndRole(context);

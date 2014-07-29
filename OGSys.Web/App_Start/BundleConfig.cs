@@ -1,7 +1,7 @@
 using System.Web;
 using System.Web.Optimization;
 
-namespace OGSys.Web
+namespace DBDemo.Web
 {
     public class BundleConfig
     {

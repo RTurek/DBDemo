@@ -9,8 +9,8 @@
     <ProjectGuid>{94A40112-83FC-440E-BB85-022B0468FDD8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OGSys.Web.Tests</RootNamespace>
-    <AssemblyName>OGSys.Web.Tests</AssemblyName>
+    <RootNamespace>DBDemo.Web.Tests</RootNamespace>
+    <AssemblyName>DBDemo.Web.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -122,9 +122,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\OGSys.Web\OGSys.Web.csproj">
+    <ProjectReference Include="..\OGSys.Web\DBDemo.Web.csproj">
       <Project>{A48D61BD-6262-4869-BDBA-1876C95DC0F0}</Project>
-      <Name>OGSys.Web</Name>
+      <Name>DBDemo.Web</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

@@ -1,6 +1,6 @@
 using System.Web.Optimization;
 
-namespace OGSys.Web
+namespace DBDemo.Web
 {
     public static class Foundation
     {

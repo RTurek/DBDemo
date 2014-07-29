@@ -7,9 +7,9 @@ using Microsoft.Owin.Security.DataProtection;
 using Microsoft.Owin.Security.Google;
 using Owin;
 using System;
-using OGSys.Web.Models;
+using DBDemo.Web.Models;
 
-namespace OGSys.Web
+namespace DBDemo.Web
 {
     public partial class Startup
     {

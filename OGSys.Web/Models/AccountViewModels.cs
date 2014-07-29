@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace OGSys.Web.Models
+namespace DBDemo.Web.Models
 {
     public class ExternalLoginConfirmationViewModel
     {
