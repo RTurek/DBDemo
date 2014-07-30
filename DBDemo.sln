@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBDemo.Web", "OGSys.Web\DBDemo.Web.csproj", "{A48D61BD-6262-4869-BDBA-1876C95DC0F0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBDemo.Web", "DBDemo.Web\DBDemo.Web.csproj", "{A48D61BD-6262-4869-BDBA-1876C95DC0F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBDemo.Web.Tests", "OGSys.Web.Tests\DBDemo.Web.Tests.csproj", "{94A40112-83FC-440E-BB85-022B0468FDD8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBDemo.Web.Tests", "DBDemo.Web.Tests\DBDemo.Web.Tests.csproj", "{94A40112-83FC-440E-BB85-022B0468FDD8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

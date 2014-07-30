@@ -122,7 +122,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\OGSys.Web\DBDemo.Web.csproj">
+    <ProjectReference Include="..\DBDemo.Web\DBDemo.Web.csproj">
       <Project>{A48D61BD-6262-4869-BDBA-1876C95DC0F0}</Project>
       <Name>DBDemo.Web</Name>
     </ProjectReference>
