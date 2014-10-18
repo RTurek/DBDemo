@@ -13,7 +13,7 @@ Overview
 * Foundation 5 (http://foundation.zurb.com)
 * Google Authentication (http://developers.google.com)
 * Highway.Data Framework (http://www.hwyfwk.com)
-* Public Repository (http://www.github.com/RTurek/OGSys)
+* Public Repository (http://www.github.com/RTurek/DBDemo)
 
 Technologies
 =====
