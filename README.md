@@ -19,4 +19,5 @@ Technologies
 =====
 HTML5, CSS3, ASP.NET MVC 5, C# 5.0, Razor View Engine, JavaScript, jQuery, Git , Public Github Repository, Compass, Chrome, SQL, Zurb Foundation 5, Desktop/Mobile Responsive Design , ASPNet Membership API, ADO.Net Entity Framework, Highway.Data, Deployed to Microsoft Azure , Visual Studio Ultimate 2013, Adobe Photoshop CC 2014, Google Developers/Apps , Sample User Data.
 
-![Dbdemo](https://www.dropbox.com/s/p3jummjwqq305mj/Screenshot%202019-06-25%2011.14.02.png?dl=0)
+![Dbdemo](https://raw.githubusercontent.com/RTurek/DBDemo/master/DemoScreenshot.png)
+
